@@ -10,6 +10,7 @@ int main() {
     int numJogador;
     int T = 1;
     int R = 1;
+    int C1 = 2;
 
     //Inicio do Jogo
     printf("***Desafio Xadrez***\n");
@@ -17,6 +18,7 @@ int main() {
     printf("1. Bispo\n");
     printf("2. Torre\n");
     printf("3. Rainha\n");
+    printf("4. Cavalo\n");
     scanf("%d", &numJogador);
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -44,11 +46,19 @@ int main() {
                 printf("A Rainha se moveu %d casas para a esquerda.\n", R);
                 R++;
             } while (R <= 8);
-    }
+        break;
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
-
+        case 4:
+            while (C1 <= 2){
+                for(int C2 = 1; C2 <= 1; C2++){
+                    printf("O Cavalo se moveu %d casas para baixo e %d casas para a esquerda\n", C1, C2);
+                }
+                C1++;
+            }
+        break;
+    }
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
